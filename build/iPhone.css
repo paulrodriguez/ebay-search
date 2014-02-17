@@ -1,0 +1,110 @@
+/*
+.mobileheader {
+display:none;
+}
+
+a.page_link{
+font-size:20px;
+}
+.mobiledivform{clear:both;width:408px; margin:0; padding:0; border-style:solid}
+
+.mobilelinks{
+float:none; clear:both; width:auto
+}
+
+#submitbtn {font-size:18px}
+
+.mobileform #searchBox{width:100%px;font-size:18px}
+*/
+html, body{width:100%; overflow-x:hidden;margin:0; padding:0;}
+
+/*.mobileform{width:100%; overflow-x:hidden;margin:0; padding:0}*/
+.itemSearchForm, .searchform{width:90%}
+
+#searchBox, #itemSearchBox{width:80%;font-size:20px;margin:0;padding:0}
+
+#submitbtn{margin:0; padding:0; font-size:20px;position:absolute}
+
+#results{margin-top:0px;position:absolute;font-size:20px;
+	background-color: white;
+	opacity:100%;
+}
+
+.searchResults{width:100%;}
+
+#main_body{width:100%;margin:0;padding:0}
+
+.centered{margin-left:0px;width:100%;}
+
+
+
+th.idheader {
+width:30%;
+
+}
+
+
+
+th.nheader {
+width:70%
+}
+
+.itemid{width:30%}
+
+.itemname{width:70%;float:left;overflow:hidden;height:60px}
+
+a.page_link{
+font-size:24px;
+}
+
+.links{
+float:none; clear:both; width:auto
+}
+
+
+.imgheader img{
+	/*width: 70%;*/
+	max-width: 80%;
+	max-height: 80%;
+	display: block;
+	margin-left:0;
+	margin-right: auto;
+}
+/*
+.imgheader {
+	width: 95%;
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	
+}
+
+/*
+.imgheader img {
+	height:10%;
+	width:70%;
+}
+*/
+
+/*****Item page results****/
+.item_info, .basic-info{width:95%; margin-left:0px;}
+#map{width:95%;height:300px; margin-left:3px}
+#map-canvas{width:95%;height:300px}
+.bids{width:95%;margin-left:0px}
+/*** Gradient buttons ***/
+.button {
+    display: inline-block;
+    width: 95%;
+    height: 40%;
+    text-align:center;
+    line-height:40px;
+    border-radius: 7px;
+    background:-webkit-linear-gradient(top,#FFF 0%,#91BDD6 100%);
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #91BDD6 100%);
+    background:-ms-linear-gradient(top,#FFF,#91BDD6);
+    background:-o-linear-gradient(top,#FFF,#91BDD6);
+    background:linear-gradient(top,#FFF,#91BDD6);
+    border: solid #91BDD6 5px;
+    box-shadow: 0px 0px 0px 5px #fff, 5px 3px 12px #000000;
+}
+

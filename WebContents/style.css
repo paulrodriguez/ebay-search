@@ -1,0 +1,41 @@
+th.idheader {
+width:150px;
+text-align:center;
+}
+
+th.nheader {
+text-align:center;
+}
+
+.centered{margin-left:50px; margin-top:50px}
+
+#searchBox {color:#B3B39D;width:300px}
+
+.searchform, .getItemForm, .itemSearchForm{float:left}
+
+.searchResults{margin: 0 auto}
+
+.item_info{clear:both}
+.imgheader {width:405px; height:162px; margin:0 auto; clear:both}
+
+#main_body{width:800px; margin:0 auto;}
+
+
+div.current{background-color:blue}
+
+
+div.resultsbox {border:solid 1px; position:absolute;background-color:white}
+
+a.page_link{text-decoration:none;font-size:20px}
+a.page_link:hover{color:red}
+a.page_link:active{color:red}
+.links{float:right}
+
+.itemlinks{float:right; margin-top:80px}
+
+#map-canvas{width:600px;height:600px}
+
+#header-img {
+	width:405px;
+	height:162px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get Item</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link media="only screen and (max-device-width: 480px)" 
+    href="iPhone.css" type="text/css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=0, maximum-scale=0"/>
+  </head>
+
+  <body>
+	<div class="imgheader">
+	<img id="header-img" src="ebay2.jpg" alt="ebay search page" />
+  </div>
+	<div id="main_body">
+		<div> <!--probably wont need it-->
+			<div class="itemlinks">
+				<a class="page_link" href="./keywordSearch.html">Search Items</a> | 
+				<a class="page_link" href="./getItem.html">ItemID Search</a>
+			</div>
+			<div class="getItemForm">
+				<form method="GET" action="./item" class="mobileform">
+					<h1>Item Lookup by ID</h1>
+					<p>
+					<span id="formLabel">Item ID (no spaces): </span>
+						<input type="text" name="id" id="itemSearchBox" maxlength="10"/><br />
+					<input type="submit" value="Get Item Details" id="submitbtn" />
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

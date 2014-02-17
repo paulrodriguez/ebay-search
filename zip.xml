@@ -1,0 +1,10 @@
+<project basedir="." default="compile" name="project5.zip">
+  <target name="clean">
+    <delete file="${ant.project.name}" />
+  </target>
+
+  <target name="compile" depends="clean">
+    <zip destfile="${ant.project.name}" basedir="." update="false" includes="README.txt build.xml src/** lib/** WebContents/keywordSearch.html WebContents/getItem.html WebContents/index.html WebContents/*.jsp WebContents/*.js WebContents/*.css WebContents/*.jpg WebContents/WEB-INF/**">
+    </zip>
+  </target>
+</project>

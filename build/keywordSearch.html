@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Index</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link media="only screen and (max-device-width: 480px)" 
+    href="iPhone.css" type="text/css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=0, maximum-scale=0"/>
+	<!--<meta name="viewport" content="user-scalable=no; width=device-width" />
+-->
+	<script  type="text/javascript" src="autoSuggest.js"></script>
+<script type="text/javascript">
+ 
+ function InitAutoSuggest() {
+	document.getElementById("searchBox").value = "search";
+	var oTextBox = new AutoSuggestionControl(document.getElementById("searchBox"), document.getElementById("results"), new QuerySuggestions());
+	//document.getElementById("query").onkeyup = sendAjaxRequest;
+ }
+ </script>
+	<script type="text/javascript">
+	<!--
+	var firsttime = 0;
+ 	function erase(x) {
+		//in case a user clicks somewhere in the page and then focuses back on the text so it wont erase it
+		if(firsttime==0) { 
+			x.value = "";
+			x.style.color="black";
+			firsttime=1;
+		}
+	}
+	-->
+	</script>
+  </head>
+
+  <body onload="InitAutoSuggest();">
+  <div class="imgheader">
+	<img id="header-img" src="ebay2.jpg" alt="ebay search page" />
+  </div>
+  <!--encloses all content-->
+  <div id="main_body">
+  <div class="links">
+		<a class="page_link" href="./keywordSearch.html">Search Items </a> |
+		<a class="page_link" href="./getItem.html">ItemID Search</a>
+	</div>
+  <div class="searchform">
+    <form method="GET" action="./search" class="mobileform">
+      <input type="text" name="q" value="" onfocus="erase(this)" id="searchBox" autocomplete="off" />
+      <input type="hidden" name="numResultsToSkip" value="0" />
+      <input type="hidden" name="numResultsToReturn" value="20" />
+      <input type="submit" value="Search" id="submitbtn"/>
+    </form>
+	
+	<div id="results"></div>
+  </div>
+	
+  </div>
+  </body>
+</html>
